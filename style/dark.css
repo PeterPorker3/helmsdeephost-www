@@ -1,0 +1,93 @@
+@charset "UTF-8"; 
+/* color pallet is similar to this: https://colorhunt.co/palette/38340 */
+/* https://stackoverflow.com/questions/31511001/is-there-a-javascript-equivalent-to-using-media-query */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #2f3032;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: white;
+	}
+}
+body {
+	min-width: 683px;
+	width: auto;
+	/* background-color: #2f3032; */
+	margin: 0;
+	
+}
+h1 {
+	color: #b0a565;
+	margin: 0;
+	margin-left: 20px;
+	font-size: 50px;
+}
+h6 {
+	display: block;
+	color: darkgray;
+	margin-right: 5px;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin-top: 10px;
+	margin-left: 10px;
+	
+}
+#theme-box-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	min-width: 683px;
+}
+#theme-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #121214;
+	width: 128px;
+	height: 32px;
+	padding: 5px;
+}
+select {
+	background-color: #2f3032;
+	color: darkgray;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: #121214;
+	height: 40px;
+	margin: 0; 
+	margin-top: 10px;
+}
+.nav-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	color: lightgray;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 15px;
+	text-decoration: none; 
+	border-left: 1px solid #2f3032;
+	border-right: 1px solid #2f3032;
+	transition: 0.3s;
+}
+.nav-button:hover {
+	background-color: #222222;
+	transition: 0.3s;
+}
+p {
+	color: white;
+}
